@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3-4-5</title>
+</head>
+<body>
+<script>
+  let f1=0;
+  let f2 =1;
+  let fi;
+  let str ="0; 1;  "
+  let total = 1;
+  let five = ""
+  for (let i=3; i<21; i++){
+      fi = f1+f2;
+      total = total + fi;
+      str +=fi + " ; ";
+      if(fi%5==0){
+          five += fi + ";";
+      }
+      f1=f2;
+      f2=fi;
+  }
+  document.write(str)
+  document.write("<br>")
+  document.write("tong 20 so dau tien = " + total)
+  document.write("<br>")
+  document.write("cac so chia het cho 5 la = " + five)
+
+</script>
+</body>
+</html>

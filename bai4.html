@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<table id="result">
+
+</table>
+<script>
+    let str = "";
+for (let i=0;i<7;i++){
+    str += "<str>"+"<td>"+"*"+"</td>";
+    if (i%6==0){
+    for (let j=1;j<20;j++){
+        str+= "<td>"+"*"+"</td>";
+    }}
+    else {
+        for (let j=1;j<20;j++){
+            str+= "<td>"+""+"</td>";}
+
+    }
+    str+="<td>"+"*"+"</td>"+"</tr>"
+}
+document.getElementById("result").innerHTML= str;
+</script>
+</body>
+</html>
